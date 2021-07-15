@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     
     strategy:
+      fail-fast: false
       matrix:
         device: [android -t apk, ios -t simulator]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
